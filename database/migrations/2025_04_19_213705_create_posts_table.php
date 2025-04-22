@@ -18,6 +18,7 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->text('content')->nullable();
             $table->enum('posted',['yes', 'not'])->default('not');
+            $table->string('image')->nullable();
             $table->timestamps();
         
             $table->foreignId('category_id')->constrained()

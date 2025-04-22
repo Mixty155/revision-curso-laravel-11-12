@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\PrimerControlador;
 use Illuminate\Support\Facades\Route;
 
@@ -47,3 +48,4 @@ Route::get('', function () {
 
 //---------------------------------------------------------//
 
+route::resource('post', PostController::class);
